@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários HTML</title>
+</head>
+<body>
+    <h1>Formulários de Cadastro</h1>
+    
+    <form action="processar.php" method="post">
+
+    <label for="Nome">Nome Completo</label><br>
+    <input type="text" id="Nome" placeholder="Digite seu Nome" name="Nome" required> <br> <br>
+
+    <label for="Email">Email</label><br>
+    <input type="text" id="Email" placeholder="Digite seu Email" name="Email" required> <br><br>
+
+    <label for="Senha">Senha</label><br>
+    <input type="password" id="Senha" placeholder="Digite sua Senha" name="Senha" required> <br><br>
+
+    <label>Sexo:</label> <br>
+    <input type="radio" id="Masculino" name="sexo" value="M">
+    <label for="Masculino">Masculino</label><br>
+    <input type="radio" id="Feminino" name="sexo" value="F">
+    <label for="Femninino">Feminino</label><br><br>
+
+     <label>Interesses:</label><br>
+    <input type="checkbox" id="programacao" name="interesses" value="programacao"> 
+    <label for="programacao">Programação</label> <br>
+
+    <input type="checkbox" id="Design" name="interesses" value="Design"> 
+    <label for="Design">Design</label><br>
+
+    <input type="checkbox" id="Esportes" name="interesses" value="Esportes"> 
+    <label for="Esportes">Esportes</label><br><br>
+
+    <label for="cidade">Cidade</label>
+    <select name="cidade" id="cidade"><option value="">Selecione sua Cidade</option>
+        <option value="sp">São Paulo</option>
+        <option value="rj">Rio de Janeiro</option>
+        <option value="bh">Belo Horizonte</option>
+    </select>
+
+    <label for="comentarios">Comentários</label> <br><br>
+<textarea name="comentarios" id="comentarios" rows="4" cols="50"></textarea> <br><br>
+
+<label for="foto">Foto:</label><br>
+<input type="file" name="foto" id="foto"><br><br>
+
+<button type="submit">Enviar</button>
+<button type="reset">Limpar</button>
+    </form>
+
+</body>
+</html>

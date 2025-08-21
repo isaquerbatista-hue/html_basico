@@ -14,36 +14,49 @@
 
 <header>
   <h1>📰 TechNews Today</h1>
-  <form>
-    <input type="search" placeholder="Buscar...">
-    <input type="email" placeholder="Seu e-mail">
-    <select>
-      <option>Newsletter</option>
-      <option>Promoções</option>
-    </select>
-    <button>Inscrever</button>
-  </form>
+  <p>As <strong>últimas novidades</strong> do mundo tech</p>
+  
 </header>
 
 <main>
   <article>
-    <h2>IA revoluciona o mercado</h2>
-    <p>Publicado em <time datetime="2025-08-15">15/08/2025</time></p>
-    <p>A inteligência artificial já impacta startups &rarr; grandes corporações.</p>
-    <details><summary>Leia mais</summary>
+    <h2>IA revoluciona o Desenvolvimento</h2>
+    <p>Publicado em <time datetime="2025-08-15">21/08/2025</time></p>
+    <p>A inteligência artificial impacta como fazemos softwares...</p>
+    
+    <details><summary>Leia mais &rarr;</summary> 
       <p>Estudos apontam que 80% das empresas adotam IA em seus processos.</p>
     </details>
+
   </article>
   <article>
-    <h2>Review do novo smartphone</h2>
+    <h2>💻Review do novo smartphone</h2>
     <iframe width="300" height="170" 
-      src="https://www.youtube.com/watch?v=2nmMhskfP7g&list=RDFEiplS_KeFs&index=7" 
-      title="Vídeo review"></iframe>
+      src="https://www.youtube.com/embed/eqUFcr1mI3Y" 
+      title="Vídeo review"></iframe> <br>
+
+      <h2>📝Newsletter</h2>
+
+      <form>
+    <input type="search" placeholder="Buscar...">
+    <label>Email: <input type="email" placeholder="Seu e-mail"></label>
+    <label for="cidade">Área de interesse</label>
+    <select name="cidade" id="cidade"><option value="">TI</option>
+        <option value="sp">Inteligência Artificial</option>
+        <label>Interesses:</label><br>
+    <input type="checkbox" id="programacao" name="interesses" value="programacao"> 
+    <label for="programacao">Aceito os Termos</label>
+
+    <button>Inscreva-se</button>
+  </form>
+
   </article>
 </main>
 
 <footer>
   <p>&copy; 2025 TechNews Today - Todos os direitos reservados.</p>
+
+  <p><em>Contato: <a href="https://www.google.com" target="_blank">info@technews.com</a></em></p>
 </footer>
 </body>
 </html>
